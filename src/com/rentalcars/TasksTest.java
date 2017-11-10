@@ -1,10 +1,8 @@
 package com.rentalcars;
 
 import org.junit.Test;
-
 import java.util.ArrayList;
 import java.util.List;
-
 import static org.junit.Assert.*;
 
 public class TasksTest {
@@ -79,7 +77,7 @@ public class TasksTest {
     }
 
     @Test
-    public void listScoresTest(){
+    public void listScoresTest() {
         Vehicle v1 = new Vehicle("XXAX", "vehicle 1", 0.0, "", 1.0);
         Vehicle v2 = new Vehicle("XXXX", "vehicle 2", 0.0, "", 6.1);
 

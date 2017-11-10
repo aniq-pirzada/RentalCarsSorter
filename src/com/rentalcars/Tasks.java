@@ -67,12 +67,12 @@ public class Tasks {
         response.add(String.format("%3s %20s   %15s   %10s   %6s\n", "", "Vehicle Name", "Car Type", "Supplier", "Rating"));
 
         int counter = 1;
-        for(char carTypeIndex : carTypes){
+        for (char carTypeIndex : carTypes) {
             for (int car = 0; car < listOfCars.size(); car++) {
                 if (carTypeIndex == listOfCars.get(car).getSipp().charAt(0)) {
-                   response.add(String.format("%2d. %20s - %15s - %10s - %.1f \n", counter, listOfCars.get(car).getName(),
-                           Vehicle.getCarType(carTypeIndex), listOfCars.get(car).getSupplier(), listOfCars.get(car).getRating()));
-                   counter++;
+                    response.add(String.format("%2d. %20s - %15s - %10s - %.1f \n", counter, listOfCars.get(car).getName(),
+                            Vehicle.getCarType(carTypeIndex), listOfCars.get(car).getSupplier(), listOfCars.get(car).getRating()));
+                    counter++;
                     break;
                 }
             }

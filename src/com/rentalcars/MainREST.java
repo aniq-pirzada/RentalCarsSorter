@@ -7,6 +7,17 @@ import javax.ws.rs.core.MediaType;
 
 @Path("/")
 public class MainREST {
+    @GET
+    @Produces(MediaType.TEXT_PLAIN)
+    public String root(){
+        return ("---------- Welcome ---------- \n" +
+                "The following URL will take you to the tasks: \n" +
+                "Task 1 - localhost:9999/task1 \n" +
+                "Task 2 - localhost:9999/task2 \n" +
+                "Task 3 - localhost:9999/task3 \n" +
+                "Task 4 - localhost:9999/task4");
+
+    }
 
     @Path("/task1")
     @GET

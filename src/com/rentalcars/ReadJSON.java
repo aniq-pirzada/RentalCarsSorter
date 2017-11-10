@@ -14,7 +14,7 @@ public class ReadJSON {
 
     private final static String urlString = "https://www.rentalcars.com/js/vehicles.json";
 
-    public static List<Vehicle> read(){
+    public static List<Vehicle> read() {
         Gson gson = new Gson();
         BufferedReader bufferedReader = null;
         List<Vehicle> listOfCars = new ArrayList<>();
